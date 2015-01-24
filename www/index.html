@@ -10,62 +10,88 @@
         <title>What To Do ?</title>
     </head>
     <body>
-        <div id='logoScreen' class='content app'>
+        <div id='logoScreen' class='content app' go='home'>
                 <img src='./img/logo.png' />
                 <h1>What To Do ?</h1>                   
         </div>
 
 		<div id='home' class='content'>
 			<h2>What To Do ?</h2>
-				<button class='english menuButton' go=''>Play the game</button><br/>
+				<button class='english menuButton' go='intro1'>Play the game</button><br/>
 				<button class='english menuButton' go=''>Configure the game</button><br/>
 				<button class='english menuButton' go=''>See the credits</button><br/>
 		</div>
 
-        <div id='intro1' class='content'>
+        <div id='intro1' class='content' go='intro2'>
             <div class='speak'>
-                <!-- Image lapin 1 + texte -->
+                <img src='./img/logo.png'>
+                <div class='english text'>Pierre and Caroline want to see the sun. They are a beautiful rabbit couple.</div><!-- Image lapin 1 + texte -->
             </div>
         </div>
 
-        <div id='intro2' class='content'>
+        <div id='intro2' class='content' go='intro3'>
            <div class='speak'>
-                <!-- Image lapin 1 + texte -->
+            <img src='./img/logo.png'>
+                <div class='text'></div><!-- Image lapin 1 + texte -->
             </div>
         </div>
 
-        <div id='intro3' class='content'>
+        <div id='intro3' class='content' go='garden'>
             <div class='speak'>
-                <!-- Image lapin 2 + texte -->
+                <img src='./img/logo.png'>
+                <div class='text'></div>
+                                <!-- Image lapin 2 + texte -->
             </div>
         </div>
 
-        <div id='intro4' class='content'>
+        <div id='garden' class='content'>
             <div class='speak'>
-                <!-- Image lapin 2 + texte -->
-           
-            <button class='english textButton' go=''>A Eat Carrots Challenge</button><br/>
-                <button class='english textButton' go=''>Hit the moles</button><br/>
-                <button class='english textButton' go='house'>Back home</button><br/>
+                <img src='./img/logo.png'><!-- Image lapin 2 + texte -->
+                <div class='english text'>What do we do now ?<br/>
+                    <button class='english textButton' go='carrots'>A Eat Carrots Challenge</button><br/>
+                        <button class='english textButton' go='moles'>Hit the moles</button><br/>
+                        <button class='english textButton' go='house'>Back home</button><br/>
+                </div>
             </div>
         </div>
 
         <div id='house' class='content'>
             <div class='speak'>
-                <!-- Image lapin 2 + texte -->
-           
-            <button class='english textButton' go='memory'>Play cards</button><br/>
-                <button class='english textButton' go=''>Dance</button><br/>
-                <button class='english textButton' go='house'>Back in the garden</button><br/>
+                <img src='./img/logo.png'>
+                <div class='english text'>What do we do now ?<br/>
+                    <button class='english textButton' go='memory'>Play cards</button><br/>
+                    <button class='english textButton' go='dance'>Dance</button><br/>
+                    <button class='english textButton' go='garden'>Back in the garden</button><br/>
+                </div>
             </div>
         </div>
-
-        <div id='memory' class='content'>
-            <div class="score">
-
+         <!-- Jeu 1 -->
+        <div id='carrots' class='content'>
+            <div class="score">0
             </div>
-            <div class="quit"></div>
+            <div class="quit" go='garden'>Stop</div>
+            <div id='belly'></div>
+        </div>
+        <!-- Jeu 2 -->
+        <div id='moles' class='content'>
+            <div class="score">0
+            </div>
+            <div class="quit" go='garden'>Stop</div>
+            <div id='holes'></div>
+        </div>
+        <!-- Jeu 3 -->
+        <div id='memory' class='content'>
+            <div class="score">0
+            </div>
+            <div class='quit' go='house'>Stop</div>
             <div id='cards'></div>
+        </div>
+         <!-- Jeu 4 -->
+        <div id='dance' class='content'>
+            <div class="score">0
+            </div>
+            <div class="quit" go='house'>Stop</div>
+            <div id='dancefloor'></div>
         </div>
 
         <script type='text/javascript' src='js/jquery.js'></script>

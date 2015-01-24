@@ -12,16 +12,13 @@ body{
 /*** LogoScreen ***/
 .app {
     width: 70%;
+    margin: 0 auto;
+    text-align: center;
+
 }   
     .app img{
+        margin-top: 10%;
         width: 25%;
-        margin: 0 auto;
-        display: table-cell;
-    }
-    #iut{
-        width: 15%;
-        margin-top: 3%;
-        float:right;
     }
 
 h1 {
@@ -73,9 +70,6 @@ h1 {
 
 .content{
 	font-size: 400%;
-	width: 80%;
-	padding: 10%;
-    margin: 0 auto;
 }
 h2{
     text-transform: uppercase;
@@ -91,8 +85,12 @@ button{
     border-radius: 20px;
 }
 /*** home ***/
+
 #home{
     text-align: center;
+    width: 70%;
+    padding: 10%;
+    margin: 0 auto;
 }
     #home h2{
         margin-bottom: 8%;
@@ -103,9 +101,41 @@ button{
         color:black;
         background-color: #FF9E00;
     }
+    #home button:hover{
+        background-color:#9CCF31;
+    }
 
-.selected {
-    border : 3px #519802 groove;
-    background-color:#519802;
+/*** Texts ***/
+
+.speak{
+    background-color: black;
+    color:white;
+    width: 100%;
+    position:absolute;
+    bottom:0;
 }
+    .speak img{
+        float:left;
+        margin-right: 2%;
+    }
+    .speak .text{
+        font-size: 60%;
+        float:left;
+        display: inline-block;
+        width:75%;
+        padding: 2% 0 2% 2%;
+    }
 
+/*** Action choices ***/
+.text button{
+
+}   
+    .textButton:nth-child(2){
+        color:#FF9E00; /*orange*/
+    }
+    .textButton:nth-child(4){
+        color:#CE0000; /*rouge*/
+    }
+    .textButton:nth-child(6){
+        color:#F7D708; /*jaune*/
+    }

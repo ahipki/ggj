@@ -4,7 +4,7 @@ $(function(){
 	divs.hide();
 
 //buttons to navigate between screens
-	var button = $("button");  
+	var button = $("*[go]");  
 
 	button.click( function() {
 		$(this).closest("div").hide();
