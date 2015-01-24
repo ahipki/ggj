@@ -10,6 +10,7 @@
         <title>What To Do ?</title>
     </head>
     <body>
+        
         <div id='logoScreen' class='content app' go='home'>
                 <img src='./img/logo.png' />
                 <h1>What To Do ?</h1>                   
@@ -88,6 +89,9 @@
         </div>
          <!-- Jeu 4 -->
         <div id='dance' class='content'>
+            <audio id='play_audio' controls preload>
+            <source src='./music/song1.mp3' type='audio/mpeg' codecs='mp3'></source>
+        </audio>
             <div class="score">0
             </div>
             <button class="quit" go='house'>Stop</button>
@@ -99,6 +103,7 @@
         <script type='text/javascript' src='js/index.js'></script>
         <script type='text/javascript'>
             app.initialize();
+
         </script>
     </body>
 </html>
