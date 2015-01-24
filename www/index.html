@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, target-densitydpi=high-dpi, user-scalable=0">
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>BoitAvot'</title>
+    </head>
+    <body>
+        <div id="ecranLogo" class="content app">
+                <img src="./img/logo.png" />
+                <h1>BoitAvot'</h1>
+                    <div id="deviceready" class="blink">
+                        <p class="event listening">Chargement ...</p>
+                        <p class="event received">Chargement terminé</p>
+                    </div>
+            <img id="iut" src="./img/logo_info_couleur.png">
+
+        </div>
+
+		<div id="nombreSujets" class="content">
+			<h2>Nombre de sujets</h2>
+			<div id="boutons">
+				<button class="choixSujet selected" value='2'>2</button>
+				<button class="choixSujet" value='3'>3</button>
+				<button class="choixSujet" value='4'>4</button>
+				<button class="choixSujet" value='5'>5</button>
+				<button class="choixSujet" value='6'>6</button>
+			</div>
+            <action name="vider_couleursSujets" />
+			<button class="navigation retour" go="ecranLogo">Retour</button>
+			<button class="navigation valider" go="couleursSujets">Valider</button>
+		</div>
+
+        <div id="couleursSujets" class="content">
+            <h2>Couleurs des sujets</h2>
+            <div id="sujets">
+                
+            </div>
+            <button class="navigation retour" go="nombreSujets">Retour</button>
+            <button class="navigation valider" go="demarre_vote">Valider</button>
+        </div>
+
+        <div id="demarre_vote" class="content">
+            <button class='navigation bigButton' go="vote">Démarrer le vote</button>
+            <button class="navigation retour" go="couleursSujets">Retour</button>
+        </div>
+
+        <div id="vote" class="content">
+            <div id="bulletins">
+
+            </div>
+            <button class='navigation valider validation_vote' go='validation_vote'>Valider</button>
+        </div>
+
+        <div id="validation_vote" class="content">
+            <h2>Merci, votre vote est bien enregistré</h2>
+            <button class='navigation valider continuer_vote' go='vote'>Continuer</button>
+        </div>
+
+        <div id="fin_vote" class="content">
+            <h2>Fin du vote</h2>
+            <button class='navigation bigButton' go='resultats'>Affichage des résultats</button>
+        </div>
+
+        <div id='resultats' class='content'>
+            
+        </div>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
