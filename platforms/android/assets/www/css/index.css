@@ -30,11 +30,11 @@ body{
 }   
     .app img{
         margin-top: 10%;
-        width: 25%;
+        width: 80%;
     }
 
 h1 {
-    font-size:200%;
+    font-size:150%;
     font-weight:normal;
     margin:0px;
     overflow:visible;
@@ -128,7 +128,7 @@ button{
 }
     .speak img{
         float:left;
-        margin-right: 2%;
+        width:20%;
     }
     .speak .text{
         font-size: 60%;
@@ -150,4 +150,15 @@ button{
     }
     .textButton:nth-child(6){
         color:#F7D708; /*jaune*/
+    }
+
+/*** Game screens ***/
+.score, .quit{
+    margin: 1%;
+}
+    .score{
+        float:left;
+    }
+    .quit{
+        float:right;
     }
