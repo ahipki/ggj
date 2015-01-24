@@ -21,7 +21,7 @@ $(function(){
 	});
 
 	$("button[go='dance']").click(function(){
-		/*$("body").append(" <audio src='./music/song1.mp3' autoplay></audio>  ")*/
+		$("body").append(" <audio src='./music/song1.mp3' autoplay></audio>  ");
 	});
 	$("#dance button[class='quit']").click(function(){
 		$("audio").remove();
