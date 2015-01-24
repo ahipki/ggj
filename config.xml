@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.boitavot" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>BoitAvot'</name>
+<widget id="com.phonegap.whattodo" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>What To Do ?</name>
     <description>
-        Faire voter sa classe par bulletin secret
+        A game for young children with 2 rabbits.
     </description>
-    <author email="boitavot@gmail.com" href="http://www.iut.u-bordeaux1.fr/info/">
-        Boitavot' Team
+    <author email="ninie1616@hotmail.fr" href="">
+        Annie Hip-Ki, Marine Guillot
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
