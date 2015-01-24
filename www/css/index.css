@@ -7,6 +7,7 @@ vert 9CCF31
 /** Contre la selection de texte **/
 *{
   -webkit-user-select: none;  /* Chrome all / Safari all */
+  -webkit-touch-callout: none;
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
 
