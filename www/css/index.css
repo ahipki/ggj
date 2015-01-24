@@ -1,9 +1,15 @@
+/*bleu 009ECE
+orange FF9E00
+jaune F7D708
+rouge CE0000
+vert 9CCF31
+*/
 body{
-	background-color:#ff8b00;
+	background-color:#009ECE;
 	font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 }
 
-/*** Ecran Logo ***/
+/*** LogoScreen ***/
 .app {
     width: 70%;
 }   
@@ -63,7 +69,7 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
-/*** FIN Ecran Logo ***/
+/*** End LogoScreen ***/
 
 .content{
 	font-size: 400%;
@@ -84,221 +90,22 @@ button{
     color:white;
     border-radius: 20px;
 }
-/*** ACCUEIL ***/
-#accueil{
+/*** home ***/
+#home{
     text-align: center;
 }
-    #params{
-        float:right;
-        background-color: #aeadac;
+    #home h2{
+        margin-bottom: 8%;
+    }
+    #home button{
         padding: 2%;
+        margin: 2% 0 2% 0;
+        color:black;
+        background-color: #FF9E00;
     }
-    #accueil button:nth-child(2){
-        width: 100%;
-        margin-top: 8%;
-    }
-
-/*** FIN ACCUEIL ***/
-
-/*** PARAMS ***/
-#parametres{
-    text-align: center;
-}
-    #menuParams{
-        display: none;
-    }
-        .menuParams{
-            width:100%;
-            margin-top: 4%;
-            margin-bottom: 2%;
-        }
-        .codeButton{
-        position: absolute;
-        right:10%;
-        bottom: 10%;
-    }
-    #codeParams{
-        margin-top: 6%;
-        text-align: center;
-        background-color: white;
-        border-radius: 25px;
-    }
-        #codeParams h3{
-            padding-top: 5%;
-        }
-        .codeParams{
-            background-color: #aeadac;
-            width: 200px;
-            margin-top: 20px;
-        }
-        #codeParams button:last-child{
-            color: black;
-            margin: 30px 0px 30px 80%;
-            text-align: right;
-        }
-
-
-/*** FIN PARAMS ***/
-
-/*** SELECTION DU NOMBRE DE SUJETS ***/
-
-.choixSujet{
-    background-color: #ff284a; /* rose */
-	border : 3px #ff284a ridge;
-	padding: 2% 4% 2% 4%;
-}
-
-#boutons{
-    margin-top: 5%;
-    text-align: center;
-}
-/*** FIN SELECTION DU NOMBRE DE SUJETS ***/
-/*** CHOIX DES SUJETS COULEURS ET TITRES ***/
-#sujets{
-    width: 80%;
-    margin: 0 auto;
-}
-#sujets input{
-    font-size: 75%;
-    height: 60px;
-    padding:3px;
-    border:1px solid #F5C5C5;
-    border-radius:5px;
-    width:60%;
-    box-shadow:1px 1px 2px #C0C0C0 inset;
-}
-
-.couleurSujet{ /*canvas de couleur*/
-    width : 60px;
-    height: 60px;
-    background-color: black;
-    border-radius : 15px;
-    margin : 0 2% 0 0; 
-    margin-bottom: -3%;
-
-}
-#sujets table{
-    margin-top: 5%;
-}
-
-/*** FIN CHOIX DES SUJETS COULEURS ET TITRES ***/
-
-#demarre_vote{
-    text-align: center;
-    margin-top: 5%;
-}
-/*** VOTE ***/
-#bulletins{
-    text-align: center;
-}
-
-.bulletin{
-    border-radius: 0px;
-}
-/*** FIN VOTE***/
-
-/*** SELECTION DE PRESENTATION DE RESULTATS***/
-.choixResult{
-}
-    .voteRouge{ 
-        background-color:red;
-    }
-
-    .voteBleu{
-		background-color: blue;
-	}
-
-	.croixBleu+span{
-        color:blue;
-    }
-
-    .croixRouge+span{
-        color:red;
-    }
-
-    #canvasChoix1{
-        text-align: left;
-        display:none;
-
-    }
-    #canvasChoix2{
-        text-align: left;
-        display:table;
-        display: none;
-    }
-	    #canvasChoix2 span{
-        	display:table-cell;
-        	padding-left: 20px;
-	    }
-	.ligne1compt{
-		display:table-row;
-	}
-	#canvas1compt{
-		display: table-cell;
-	}
-   
-    #ligne2compt{
-		display:table-row;
-	}
-	.vote{
-	 	height: 72px;
-	 	width: 5%;
-	 	border-radius: 45px;
-	}
-	.voteCase{
-	 	width: 65px;
-	 	height: 65px;
-	 	border-radius: 50px;
-	}
-	#canvasChoix3{
-
-	}
-		#canvasChoix3 table{
-			margin-top: 20px;
-		 	border-collapse:collapse;
-		 	text-align: center;
-		}
-		#canvasChoix3 tr{
-			width: auto;
-			height: 75px;
-		}
-		#canvasChoix3 td {
-		 	border:1px solid black;
-		 	width:75px;
-		 	padding-top: 4px;
-		}
-/*** FIN SELECTION DE PRESENTATION DE RESULTATS***/
 
 .selected {
     border : 3px #519802 groove;
     background-color:#519802;
-}
-
-.valider{
-    position: absolute;
-    right:10%;
-    bottom: 10%;
-    background-color: #519802; /* vert */
-    padding: 10px;
-}
-.retour{
-    position: absolute;
-    left:10%;
-    bottom: 10%;
-    padding: 10px;
-}
-
-.demarre_vote {
-    background-color: #ff284a;
-}
-
-.ecran_de_vote{
-    border : 3px #519802 groove;
-    background-color:#519802;
-}
-
-.bigButton {
-    background-color: #ff284a;
-    padding : 5%;
 }
 
