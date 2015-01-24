@@ -4,10 +4,10 @@ $(function(){
 	divs.hide();
 
 //buttons to navigate between screens
-	var button = $("*[go]");  
+	var button = $("*[go]").not(":first");  
 
 	button.click( function() {
-		$(this).closest("div").hide();
+		$(this).closest("div[id]").hide();
 		gotoSection($(this).attr("go"));
 	});
 
