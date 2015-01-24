@@ -151,3 +151,14 @@ button{
     .textButton:nth-child(6){
         color:#F7D708; /*jaune*/
     }
+
+/*** Game screens ***/
+.score, .quit{
+    margin: 1%;
+}
+    .score{
+        float:left;
+    }
+    .quit{
+        float:right;
+    }
