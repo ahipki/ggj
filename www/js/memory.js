@@ -31,12 +31,10 @@ $(function(){
 
 	}
 	function initializeGame(){
-		$('#cards').empty();
+		$('#cards tr').empty();
 		initializeCardBool();
 		var index=0;
 		//tableau 3x10
-		$("#cards").append("<table></table>");
-		$("#cards table").append("<tr></tr><tr></tr><tr></tr>");
 		var lines = $("#cards tr");
 		lines.each(function(){
 			for (var i = 0; i < 10; i++){
@@ -44,10 +42,8 @@ $(function(){
 				index++;
 			}
 		});
-		$('#hide').empty();
+		$('#hide tr').empty();
 		var index = 0;
-		$("#hide").append("<table></table>");
-		$("#hide table").append("<tr></tr><tr></tr><tr></tr>");
 		var lineshide = $("#hide tr");
 		lineshide.each(function(){
 			for (var i = 0; i < 10; i++){
@@ -91,7 +87,8 @@ $(function(){
 						nbClick=0;
 						score(5);
 					}
-					
+					alert(open1.length);
+
 				}
 
 			}

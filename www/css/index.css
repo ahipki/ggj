@@ -213,20 +213,24 @@ button{
     position:absolute;
     margin-top:10%;
 }
-    #cards img{
-        width:100%;
-    }
-
-    #cards tr{
-        height:178px;
-    }
 #hide{
     position: absolute;
     margin-top: 10%;
 }
-    #hide img{
-        width:100%;
+    .memtab{
+        width: 80%;
+        border-collapse:collapse;
+        text-align: center;
     }
-        #hide tr{
-            height:178px;
+        .memtab td{
+            width:178px;
         }
+        .memtab tr{
+            height: 120px;
+        }
+        .memtab img{
+            width:100%;
+        }
+
+
+
