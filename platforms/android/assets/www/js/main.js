@@ -54,8 +54,6 @@ $("#configuration button").click(function(){
 
 //Game 2 - moles
 
-//Game 3 - cards
-
 //Game 4 - dance
 	$("button[go='dance']").click(function(){
 		$("body").append(" <audio src='./music/song1.mp3' autoplay></audio>  ")
@@ -63,4 +61,7 @@ $("#configuration button").click(function(){
 	$("#dance button[class='quit']").click(function(){
 		$("audio").remove();
 	});
+
+
+
 });

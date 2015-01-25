@@ -208,3 +208,25 @@ button{
 .background{
     width:100%;
 }
+/*** ***/
+#cards{
+    position:absolute;
+    margin-top:10%;
+}
+    #cards img{
+        width:100%;
+    }
+
+    #cards tr{
+        height:178px;
+    }
+#hide{
+    position: absolute;
+    margin-top: 10%;
+}
+    #hide img{
+        width:100%;
+    }
+        #hide tr{
+            height:178px;
+        }
