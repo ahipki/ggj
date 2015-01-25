@@ -131,7 +131,7 @@ button{
         width:20%;
     }
     .speak .text{
-        font-size: 60%;
+        font-size: 80%;
         float:left;
         display: inline-block;
         width:75%;
@@ -162,3 +162,49 @@ button{
     .quit{
         float:right;
     }
+
+
+/*** Credits ***/
+#credits{
+    width: 80%;
+    margin: 4% auto;
+    font-size: 50px;
+    color: #FF9E00;
+    background-color: black;
+    padding:4%;
+}
+    #credits span{
+        font-weight: bold;
+        color:#9CCF31;
+    }
+
+/*** Configuration ***/
+#configuration{
+    width: 80%;
+    margin: 4% auto;
+    font-size: 50px;
+    color: #FF9E00;
+    background-color: black;
+    padding:4%;
+    line-height: 200%;
+}
+    #configuration button{
+        float:right;
+        padding:2%;
+        background-color: #9CCF31;
+        margin-bottom: 2%;
+        margin-top: 8%;
+        margin-right: -4%;
+    }
+    #configuration input{
+        width:50%;
+        height:50px;
+        font-size: 80%;
+    }
+    #configuration label{
+        margin-right: 2%;
+    }
+/*** background images ***/
+.background{
+    width:100%;
+}

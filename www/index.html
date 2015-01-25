@@ -19,35 +19,36 @@
 		<div id='home' class='content'>
 			<h2>What To Do ?</h2>
 				<button class='english menuButton' go='intro1'>Play the game</button><br/>
-				<button class='english menuButton' go=''>Configure the game</button><br/>
-				<button class='english menuButton' go=''>See the credits</button><br/>
+				<button class='english menuButton' go='configuration'>Configure the game</button><br/>
+				<button class='english menuButton' go='credits'>See the credits</button><br/>
 		</div>
 
         <div id='intro1' class='content' go='intro2'>
             <div class='speak'>
                 <img src='./img/jason.png'>
-                <div class='english text'>Hey Annie ! I'm hungry ! Let's go to the garden !</div><!-- Image lapin 1 + texte -->
+                <div class='english text'>Hey <span class='girl'>Annie</span> ! I'm hungry ! Let's go to the garden !</div><!-- Image lapin 1 + texte -->
             </div>
         </div>
 
         <div id='intro2' class='content' go='intro3'>
            <div class='speak'>
             <img src='./img/annie.png'>
-                <div class='english text'>Okay Jason. Take the mallets.</div><!-- Image lapin 1 + texte -->
+                <div class='english text'>Okay <span class='guy'>Jason</span>. Take the mallets.</div><!-- Image lapin 1 + texte -->
             </div>
         </div>
 
         <div id='intro3' class='content' go='garden'>
             <div class='speak'>
                 <img src='./img/jason.png'>
-                <div class=' english text'>Okay Annie. I'm ready to go !</div>
+                <div class=' english text'>Okay <span class='girl'>Annie</span>. I'm ready to go !</div>
                                 <!-- Image lapin 2 + texte -->
             </div>
         </div>
 
         <div id='garden' class='content'>
+            <img class='background' src='./img/garden.png' />
             <div class='speak'>
-                <img src='./img/annie.png'><!-- Image lapin 2 + texte -->
+                <img src='./img/annie.png'>
                 <div class='english text'>What do we do now ?<br/>
                     <button class='english textButton' go='carrots'>A Eat Carrots Challenge</button><br/>
                         <button class='english textButton' go='moles'>Hit the moles</button><br/>
@@ -66,33 +67,50 @@
                 </div>
             </div>
         </div>
-         <!-- Jeu 1 -->
+         <!-- Game 1 -->
         <div id='carrots' class='content'>
             <div class="score">Score : <span>0</span>
             </div>
             <button class="quit" go='garden'>Stop</button>
             <div id='belly'></div>
         </div>
-        <!-- Jeu 2 -->
+        <!-- Game 2 -->
         <div id='moles' class='content'>
             <div class="score">Score : <span>0</span>
             </div>
             <button class="quit" go='garden'>Stop</button>
             <div id='holes'></div>
         </div>
-        <!-- Jeu 3 -->
+        <!-- Game 3 -->
         <div id='memory' class='content'>
             <div class="score">Score : <span>20</span>
             </div>
             <button class='quit' go='house'>Stop</button>
             <div id='cards'></div>
         </div>
-         <!-- Jeu 4 -->
+         <!-- Game 4 -->
         <div id='dance' class='content'>
             <div class="score">Score : <span>0</span>
             </div>
             <button class="quit" go='house'>Stop</button>
             <div id='dancefloor'></div>
+        </div>
+
+        <div id='credits' class='content'>
+            <span>Ideas :</span> Annie Hip-Ki, Marine Guillot, Ghyslain Medzegue <br />
+            <span>Scenario :</span> Annie Hip-Ki and Marine Guillot <br />
+            <span>Pictures :</span> Annie Hip-Ki and Marine Guillot (rabbits) <br />
+            <span>Developpement :</span> Annie Hip-Ki <br />
+            <span>Team :</span> Annie Hip-Ki, Marine Guillot, Ghyslain Medzegue, Kevin Baptista, Claude Cugerone, Nathalie Craeye, Marin Liebert.
+        </div>
+
+        <div id='configuration' class='content'>
+            Change names :<br />
+            <label>The guy</label>
+            <input type='text' placeholder='Jason' maxlength='10'/><br />
+            <label>The girl</label>
+            <input typ='text' placeholder='Annie' maxlength='10'/>
+            <button>Save settings</button>
         </div>
 
         <script type='text/javascript' src='js/jquery.js'></script>
