@@ -72,11 +72,16 @@
             </div>
         </div>
          <!-- Game 1 -->
-        <div id='carrots' class='content'>
-            <div class="score">Score : <span>0</span>
+        <div id='carrots' class='content' go='house'>
+            <!--<div class="score">Score : <span>0</span>
             </div>
             <button class="quit" go='garden'>Stop</button>
-            <div id='belly'></div>
+            <div id='belly'></div>-->
+            <img class='background' src='./img/garden.png' />
+             <div class='speak'>
+                <img src='./img/jason.png'>
+                <div class='english text'>Oh no ! We don't have enough carrots...</div><!-- Image lapin 1 + texte -->
+            </div>
         </div>
         <!-- Game 2 -->
         <div id='moles' class='content'>
@@ -106,11 +111,16 @@
             </div>
         </div>
          <!-- Game 4 -->
-        <div id='dance' class='content'>
-            <div class="score">Score : <span>0</span>
+        <div id='dance' class='content' go='house'>
+            <img class='background' src='./img/house.png' />
+            <div class='speak'>
+                <div class='english text'>I don't think I want to do dance today... </div>
+                    <img src='./img/annie.png'>
+            </div>
+            <!--<div class="score">Score : <span>0</span>
             </div>
             <button class="quit" go='house'>Stop</button>
-            <div id='dancefloor'></div>
+            <div id='dancefloor'></div>-->
         </div>
 
         <div id='credits' class='content'>
@@ -134,6 +144,7 @@
         <script type='text/javascript' src='js/main.js'></script>
         <script type='text/javascript' src='js/index.js'></script>
         <script type='text/javascript' src='js/memory.js'></script>
+        <script type='text/javascript' src='js/mole.js'></script>
         <script type='text/javascript'>
             app.initialize();
 

@@ -208,7 +208,7 @@ button{
 .background{
     width:100%;
 }
-/*** ***/
+/*** MEMORY GAME ***/
 #cards{
     position:absolute;
     margin-top:10%;
@@ -233,4 +233,8 @@ button{
         }
 
 
-
+/*** MOLES GAME ***/
+.mole
+{
+    position: relative; 
+}
