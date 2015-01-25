@@ -234,6 +234,9 @@ button{
 
 
 /*** MOLES GAME ***/
+#holes{
+    clear:both;
+}
 .mole
 {
     position: relative; 
