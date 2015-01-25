@@ -208,3 +208,10 @@ button{
 .background{
     width:100%;
 }
+/*** ***/
+#cards{
+    clear:both;
+}
+    #cards img{
+        width:100%;
+    }
