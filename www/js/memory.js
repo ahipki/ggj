@@ -87,8 +87,6 @@ $(function(){
 						nbClick=0;
 						score(5);
 					}
-					alert(open1.length);
-
 				}
 
 			}

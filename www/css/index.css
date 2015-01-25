@@ -218,15 +218,15 @@ button{
     margin-top: 10%;
 }
     .memtab{
-        width: 80%;
+        width: 100%;
         border-collapse:collapse;
         text-align: center;
     }
         .memtab td{
-            width:178px;
+            width:185px;
         }
         .memtab tr{
-            height: 120px;
+            height: 150px;
         }
         .memtab img{
             width:100%;
